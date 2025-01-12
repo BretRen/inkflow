@@ -1,0 +1,188 @@
+/* 全局样式 */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* 页面容器 */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 文章标题 */
+h1, h2, h3 {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+/* 链接样式 */
+a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* 按钮样式 */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* 文章内容 */
+.content {
+    margin-bottom: 30px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+.content img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+/* 代码块样式 */
+pre, code {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    overflow-x: auto;
+    font-size: 0.9rem;
+}
+
+pre {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+/* 表格样式 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+
+/* 卡片样式（用于文章列表） */
+.card {
+    background: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card a {
+    font-size: 0.9rem;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* 页脚样式 */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+    font-size: 0.9rem;
+}
+/* 首页按钮单独样式 */
+.card .btn {
+    color: #333333; /* 默认文字颜色为深灰 */
+}
+
+.card .btn:hover {
+    color: #ffffff; /* 悬停时文字颜色为白色 */
+}
+/* 按钮样式 */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007BFF; /* 按钮背景色 */
+    color: #ffffff; /* 按钮文字颜色 */
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold; /* 让文字更醒目 */
+    transition: background 0.3s, color 0.3s;
+}
+
+/* 鼠标悬停效果 */
+.btn:hover {
+    background: #0056b3; /* 悬停时的背景色 */
+    color: #f4f4f4; /* 悬停时的文字颜色 */
+}
+    

@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>InkFlow</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>My Blog</h1>
+        <hr>
+        {% for article in articles %}
+        <div class="card">
+            <h2>{{ article.title }}</h2>
+            <p>{{ article.excerpt }}</p>
+            <a href="{% url 'article_detail' article.pk %}" class="btn">Read More</a>
+        </div>
+        {% endfor %}
+    </div>
+    <footer>&copy; 2025 InkFlow</footer>
+</body>
+</html>
