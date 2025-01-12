@@ -1,0 +1,9 @@
+/***** 自定义管理页面样式 *****/
+body {
+    background-color: #f8f9fa; /* 浅灰背景 */
+}
+
+.dashboard-title {
+    color: #007bff; /* 蓝色标题 */
+    font-size: 1.5rem;
+}

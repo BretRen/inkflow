@@ -29,6 +29,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# 自定义管理页面标题
+ADMIN_SITE_HEADER = "InkFlow 管理后台"
+ADMIN_SITE_TITLE = "InkFlow 后台"
+ADMIN_INDEX_TITLE = "欢迎来到 InkFlow 管理后台"
 
 # Application definition
 
@@ -40,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'grappelli',
 ]
 
 MIDDLEWARE = [
@@ -117,11 +122,13 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
-
 STATIC_URL = '/static/'
+
 STATICFILES_DIRS = [
-    BASE_DIR / "static",  # Adjust if you use a different directory structure
+    BASE_DIR / "static",  # 你的自定义静态文件目录
 ]
+
+
 
 
 # Default primary key field type

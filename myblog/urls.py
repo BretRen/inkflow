@@ -1,9 +1,8 @@
-from django.contrib import admin
 from django.urls import path, include
+from blog.admin import custom_admin_site  # 确保导入路径正确
 
 urlpatterns = [
-    path('admin/', admin.site.urls),  # 默认 Django 管理后台
-    path('inkflow-admin/', include('blog.urls_admin')),  # 自定义管理后台
+    path('admin/', custom_admin_site.urls),  # 自定义 Admin 面板
     path('', include('blog.urls')),  # 前端博客页面
+    path('grappelli/', include('grappelli.urls')),  # Grappelli URL
 ]
-
